@@ -1,9 +1,10 @@
 import React from "react";
+import "./NavListItem.css"
 
-function NavListItem(){
+function NavListItem({item}){
     return(
         <li>
-            <a href="#">Home</a>
+            <a href={item.link}>{item.name}</a>
         </li>
     )
 }
